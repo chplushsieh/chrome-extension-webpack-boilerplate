@@ -24,12 +24,13 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: "babel" },
-      { test: /\.css$/, loader: "style-loader!css-loader" }
+      { test: /\.(js|jsx)$/, loader: "babel" },
+      { test: /\.css$/, loaders: ["style", "css"] }
     ]
   },
   resolve: {
-    alias: alias
+    alias: alias,
+    extensions: ["", ".js", ".jsx", ".css"]
   },
   plugins: [
     // expose and write the allowed env vars on the compiled bundle
