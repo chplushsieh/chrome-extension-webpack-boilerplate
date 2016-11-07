@@ -15,6 +15,7 @@ if (fileSystem.existsSync(secretsPath)) {
 module.exports = {
   entry: {
     popup: path.join(__dirname, "src", "js", "popup.js"),
+    newtab: path.join(__dirname, "src", "js", "newtab.js"),
     options: path.join(__dirname, "src", "js", "options.js"),
     background: path.join(__dirname, "src", "js", "background.js")
   },
