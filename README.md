@@ -1,6 +1,6 @@
-#Chrome Extension Webpack Boilerplate
+#Note Tab, a Chrome Extension that opens a note editor on New Tab page
 
-A basic foundation boilerplate for rich Chrome Extensions using [Webpack](https://webpack.github.io/) to help you write modular and modern Javascript code, load CSS easily and [automatic reload the browser on code changes](https://webpack.github.io/docs/webpack-dev-server.html#automatic-refresh).
+It's like Papier, but with syncing!
 
 ##Developing a new extension
 _I'll assume that you already read the [Webpack docs](https://webpack.github.io/docs) and the [Chrome Extension](https://developer.chrome.com/extensions/getstarted) docs._
@@ -67,9 +67,3 @@ import secrets from "secrets";
 ApiCall({ key: secrets.key });
 ```
 :point_right: The files with name `secrets.*.js` already are ignored on the repository.
-
-##With React.js
-:bulb: If you want use [React.js](https://facebook.github.io/react/) with this boilerplate, check the **[react branch](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/tree/react)**.
-
--------------
-Samuel Simões ~ [@samuelsimoes](https://twitter.com/samuelsimoes) ~ [Blog](http://blog.samuelsimoes.com/)
